@@ -31,7 +31,7 @@ export default function Countries (){
         fetch(API)
         .then((res)=>res.json())
         .then((jsonRes) => setData(jsonRes))
-        .catch((error) => console.error("Error fetching data:"))
+        .catch(() => console.error("Error fetching data:"))
     },[]);
 
     return (
